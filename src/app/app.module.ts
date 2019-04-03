@@ -1,22 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms'
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './user/user.component';
-import { IsComponent } from './is/is.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
+import { CommentPipe } from './comment.pipe';
+import { ColorDirective } from './color.directive';
 
+
+const routes: Routes = [
+  { path: "profile", component: ProfileComponent },
+  { path: "search", component: SearchComponent }
+]
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    IsComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    CommentPipe,
+    ColorDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
