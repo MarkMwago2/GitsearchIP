@@ -3,14 +3,13 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms'
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
 import { CommentPipe } from './comment.pipe';
 import { ColorDirective } from './color.directive';
-import { AppRoutingComponent } from './app-routing/app-routing.component';
 
 
 const routes: Routes = [
@@ -23,8 +22,7 @@ const routes: Routes = [
     ProfileComponent,
     SearchComponent,
     CommentPipe,
-    ColorDirective,
-    AppRoutingComponent
+    ColorDirective
   ],
   imports: [
     BrowserModule,

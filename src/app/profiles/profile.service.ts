@@ -2,11 +2,9 @@ import { Injectable } from '@angular/core';
 import {HttpClient}  from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
-
-
-import {Repository} from './repository'
-import {User} from './user'
-import {environment} from '../environments/environment'
+import {Repository} from '../repository'
+import {User} from '../user'
+import {environment} from '../../environments/environment'
 
 
 @Injectable({
@@ -26,7 +24,7 @@ export class ProfileService {
 
     }
     getRepository(){
-      return this.http.get("https://api.github.com/users/"+this.username +'/repos')
+      return this.http.get("https://api.github.com/users/"+this.username + '/repos')
       .pipe(map(result=>result))
   }
   updateUser(username:string){

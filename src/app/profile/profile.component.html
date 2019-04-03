@@ -1,4 +1,4 @@
-div classs="page">
+<div classs="page">
 <body>
   <div class="container-fluid">
       <img src="http://stylus-lang.com/img/octocat.svg" alt="git image" id="img">
@@ -29,52 +29,52 @@ div classs="page">
           </div>
           <button class="btn btn-outline-primary btn-sm" name="username" (click)="searchUser()"> Search </button>
           <br>
-                    <p>Search results </p>
-                    <img class="profile-img img-thumbnail" src="{{user.avatar_url}}">
-                    <div id="table">
-                      <table>
-                        <tr>
-                          <td>id</td>
-                          <td>{{user.login}}</td>
-                        </tr>
-                        <tr>
-                          <td>Username</td>
-                          <td>{{user.name}}</td>
-                        </tr>
-                        <tr>
-                          <td>No of followers</td>
-                          <td>{{user.followers}}</td>
-                        </tr>
-                        <tr>
-                          <td>No of following</td>
-                          <td>{{user.following}}</td>
-                        </tr>
-                        <tr>
-                          <td>Bio</td>
-                          <td>{{user.bio}}</td>
-                        </tr>
-            <tr>
-              <td>No of repositories</td>
-              <td>{{user.public_repos}}</td>
-            </tr>
-            <tr>
-              <td>Created on the</td>
-              <td>{{user.created_at}}</td>
-            </tr>
-          </table>
+          <p>Search results </p>
+          <img class="profile-img img-thumbnail" src="{{user.avatar_url}}">
+          <div id="table">
+            <table>
+              <tr>
+                <td>id</td>
+                <td>{{user.login}}</td>
+              </tr>
+              <tr>
+                <td>Username</td>
+                <td>{{user.name}}</td>
+              </tr>
+              <tr>
+                <td>No of followers</td>
+                <td>{{user.followers}}</td>
+              </tr>
+              <tr>
+                <td>No of following</td>
+                <td>{{user.following}}</td>
+              </tr>
+              <tr>
+                <td>Bio</td>
+                <td>{{user.bio}}</td>
+              </tr>
+              <tr>
+                <td>No of repositories</td>
+                <td>{{user.public_repos}}</td>
+              </tr>
+              <tr>
+                <td>Created on the</td>
+                <td>{{user.created_at}}</td>
+              </tr>
+            </table>
 
-          <br>
-          <p id="repo"><a routerLink='/search' routerLinkActive='active'>Repositories</a></p>
+            <br>
+            <p id="repo"><a routerLink='/search' routerLinkActive='active'>Repositories</a></p>
 
-        </div>
+          </div>
 
-      </form>
+        </form>
+      </div>
+
+
+
     </div>
 
-
-
-  </div>
-
-</body>
+  </body>
 </div>
   <router-outlet></router-outlet>
