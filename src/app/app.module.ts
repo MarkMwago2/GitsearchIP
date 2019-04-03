@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
 import { CommentPipe } from './comment.pipe';
 import { ColorDirective } from './color.directive';
+import { AppRoutingComponent } from './app-routing/app-routing.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
     ProfileComponent,
     SearchComponent,
     CommentPipe,
-    ColorDirective
+    ColorDirective,
+    AppRoutingComponent
   ],
   imports: [
     BrowserModule,
