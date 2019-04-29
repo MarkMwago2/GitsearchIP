@@ -21,8 +21,6 @@ CSS
 Javascript and 
 jQuery bootstraps
 
-
-
 #### Support and contact details
 
 Feel free to contact me on: markmwago@gmail.com
