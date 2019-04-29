@@ -1,24 +1,30 @@
-Git search
+### Git search
+
 Application that allows a user to search for git repositories. This project was generated with Angular CLI version 7.3.6.
 
-Author
+### Author
+
 Mark Mwago
 Project Description
 Application that allows a user to search for git repositories.
 
-Setup/Installation Requirements
+### Setup/Installation Requirements
+
 You will need a browser to run this site because it entirely depends on a server.
 
-Technologies Used
+#### Technologies Used
+
 HTML
 CSS
 javascript and jquery bootstraps
 Support and contact details
 
-Feel free to contact me incase of anything ;)
+#### Feel free to contact me incase of anything 
+
 markmwago@gmail.com
 
-License
+#### License
+
 MIT License
 
 Copyright (c) [2019] [Mark Mwago]
